@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box
+}
+.hero {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.hero-text {
+    background-color: rgba(0,0,0, 0.4);
+    background-size:cover;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+body{
+    margin-top: 0px;
+    font-family: Verdana, sans-serif;
+    background-image: url("img/bkg.jpg");
+    /*background-repeat:;*/
+    background-size: contain;
+    opacity: 0.5px;
+}
+h1{
+  padding-top: 250px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: Georgia;
+  text-shadow: 0px 0px 2px;
+}
+h2{
+  font-size: 20px;
+  padding-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+p{
+  font-style:normal;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.img-box{
+    width: 500px;
+    margin: 25px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.img-box img{
+    width: 100%;
+}
+.img-box:hover{
+    transform: scale(1.05);
+}
+p{
+  background-color: white;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 10px;
+  padding-bottom:10px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  border: 2px solid grey;
+}
+.window, .window2, .window3, .window4, .window5, .window6, .window7, .window8{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.857);
+    transition: all 0.8s;
+}
+.window.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window2.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window3.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window4.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window5.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window6.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window7.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window8.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window img{
+    width: 50%;
+}
+.window2 img{
+    width: 50%;
+}
+.window3 img{
+    width: 50%;
+}
+.window4 img{
+    width: 50%;
+}
+.window5 img{
+    width: 50%;
+}
+.window6 img{
+    width: 50%;
+}
+.window7 img{
+    width: 50%;
+}
+.window8 img{
+    width: 50%;
+}
+.d1{
+  display: none;
+}
+@media(max-width: 1100px){
+    .window .full-img{
+        width: 80%;
+    }
+}
+
+.mySlides {display: none}
+.mySlides3 {display: none}
+.mySlides4 {display: none}
+.mySlides5 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

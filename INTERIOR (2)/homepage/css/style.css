@@ -1,0 +1,54 @@
+body{
+    height:100%;
+    margin:10px;
+    padding:20px;
+}
+header{
+    margin:0px;
+    padding:0px;
+}
+/*.title{
+    height:100px;
+    margin-bottom:0px;
+    padding : 0px;
+    width:200px
+
+}
+.image_header
+{
+    margin-bottom:0px;
+    position: relative;
+    margin-top:60px;
+    padding:0px;
+}*/
+.top-left{
+    position: absolute;
+    top:100px;
+    left:50px;
+}
+
+
+.hero-image{
+    position:relative;
+    background-image: url(https://img.freepik.com/free-photo/loft-vintage-interior-living-room-wood-armchairs-with-plant-wood-flooring-blue-wall-3d-rendering_33739-457.jpg?size=626&ext=jpg&ga=GA1.2.129825708.1594425600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:400px;
+    top-right:40;
+}
+.hero-text{
+    position: absolute;
+    top:20px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    text-align: center;
+    font-family:sans-serif;
+    color:black;
+
+}
+.hero-image:hover{
+    background: linear-gradient(rgba(134,59,255,0.2),rgba(134,59,252,0.2),url(https://img.freepik.com/free-photo/loft-vintage-interior-living-room-wood-armchairs-with-plant-wood-flooring-blue-wall-3d-rendering_33739-457.jpg?size=626&ext=jpg&ga=GA1.2.129825708.1594425600);
+}
+
