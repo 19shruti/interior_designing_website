@@ -116,9 +116,9 @@ function showSlides(n,cnt) {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].  style.display = "none";
       console.log(i);
   }
   slides[slideIndex-1].style.display = "block";
-  console.log("abc"+slideIndex-1);
+  console.log("abc nnn "+slideIndex-1);
 }
